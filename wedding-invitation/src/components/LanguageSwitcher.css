@@ -1,0 +1,25 @@
+.language-switcher {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.language-btn {
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.language-btn:hover {
+    background-color: var(--accent-bg);
+}
+
+.language-btn.active {
+    background-color: var(--accent-bg);
+    border-color: var(--accent-border);
+    font-weight: 600;
+}

@@ -1,0 +1,36 @@
+{
+  "hero": {
+    "title": "We're Getting Married!",
+    "subtitle": "Join us for our special day"
+  },
+  "countdown": {
+    "title": "Countdown to the Big Day",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
+  },
+  "schedule": {
+    "title": "Schedule",
+    "ceremony": "Ceremony",
+    "reception": "Reception"
+  },
+  "location": {
+    "title": "Location",
+    "getDirections": "Get Directions"
+  },
+  "rsvp": {
+    "title": "RSVP",
+    "placeholder": "Enter your name",
+    "submit": "Submit"
+  },
+  "guests": {
+    "title": "Invited Guests"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions"
+  },
+  "footer": {
+    "text": "Thank you for celebrating with us"
+  }
+}
