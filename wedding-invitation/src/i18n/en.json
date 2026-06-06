@@ -1,7 +1,7 @@
 {
   "hero": {
-    "title": "We're Getting Married!",
-    "subtitle": "Join us for our special day"
+    "title": "Ninikia and Dimitri",
+    "subtitle": "Presenting"
   },
   "countdown": {
     "title": "Countdown to the Big Day",
@@ -28,7 +28,29 @@
     "title": "Invited Guests"
   },
   "faq": {
-    "title": "Frequently Asked Questions"
+    "title": "Frequently Asked Questions",
+    "items": [
+      {
+        "question": "What is the dress code?",
+        "answer": "The dress code is formal. We suggest dark suits or evening gowns."
+      },
+      {
+        "question": "Can I bring a guest?",
+        "answer": "Please refer to your invitation. If you have a plus one, it will be indicated on your invitation card."
+      },
+      {
+        "question": "What time should I arrive?",
+        "answer": "Please arrive 15 minutes before the ceremony starts. The ceremony begins at 5:00 PM."
+      },
+      {
+        "question": "Is there parking available?",
+        "answer": "Yes, free parking is available at the venue. Valet parking will also be provided."
+      },
+      {
+        "question": "What is the menu for the reception?",
+        "answer": "A three-course dinner will be served. Vegetarian and other dietary options are available upon request."
+      }
+    ]
   },
   "footer": {
     "text": "Thank you for celebrating with us"
