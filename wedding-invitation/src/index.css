@@ -67,6 +67,11 @@
     }
   }
 
+  #hero {
+    padding: 0px;
+    margin-bottom: 24px;
+  }
+
   #navbar {
     padding: 0px 24px;
 

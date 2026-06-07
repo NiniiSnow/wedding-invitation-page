@@ -6,9 +6,11 @@ export function Hero() {
     return (
         <section
             id="hero"
-            className="bg-center w-full h-96 flex  justify-center text-center relative"
-            style={{ backgroundImage: "url('/sioni.jpeg')" }}
         >
+            <div
+                className="bg-center w-full h-96 flex  justify-center text-center relative"
+                style={{ backgroundImage: "url('/sioni.jpeg')" }}>
+            </div>
 
             <div>
                 <h1 className="text-white text-4xl md:text-5xl font-bold">{t('hero.title')}</h1>
