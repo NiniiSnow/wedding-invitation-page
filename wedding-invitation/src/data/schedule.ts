@@ -14,7 +14,7 @@ export const scheduleItems: ScheduleItem[] = [
         titleKey: "schedule.items.0.title",
         time: "1:00 PM",
         locationKey: "schedule.items.0.location",
-        imageUrl: "/church.jpg",
+        imageUrl: "/glt.avif",
         height: "h-60.5",
         descriptionKey: "schedule.items.0.description",
     },
