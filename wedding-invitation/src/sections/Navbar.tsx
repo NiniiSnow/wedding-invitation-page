@@ -7,7 +7,7 @@ export function Navbar() {
     return (
         <section id="navbar" className="w-full h-16 flex items-center justify-start px-4 md:px-8  shadow-md">
             <LanguageSwitcher />
-            <div className="navbar-items">
+            {/* <div className="navbar-items">
                 <button className="navbar-item">
                     განრიგი
                 </button>
@@ -20,7 +20,7 @@ export function Navbar() {
                 <button className="navbar-item">
                     კითხვები
                 </button>
-            </div>
+            </div> */}
         </section>
     );
 }

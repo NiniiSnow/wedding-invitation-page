@@ -1,0 +1,174 @@
+.floating-fishermen-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.floating-fisherman {
+  position: absolute;
+  cursor: pointer;
+  pointer-events: all;
+  transition: transform 0.2s ease;
+
+  img {
+    width: 80px;
+    height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  }
+
+  &:hover {
+    transform: scale(1.1);
+
+    img {
+      filter: drop-shadow(0 4px 8px rgba(170, 59, 255, 0.3));
+    }
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+/* Floating animation for fishermen */
+.fisherman-1 {
+  top: 10%;
+  left: 10%;
+  animation: float 6s ease-in-out infinite;
+
+  img {
+    transform: scaleX(-1);
+  }
+}
+
+.fisherman-2 {
+  top: 25%;
+  right: 15%;
+  animation: float 8s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.fisherman-3 {
+  bottom: 20%;
+  left: 20%;
+  animation: float 7s ease-in-out infinite;
+  animation-delay: 2s;
+
+  img {
+    transform: scaleX(-1);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+
+  25% {
+    transform: translateY(-20px) translateX(15px);
+  }
+
+  50% {
+    transform: translateY(-40px) translateX(-10px);
+  }
+
+  75% {
+    transform: translateY(-20px) translateX(20px);
+  }
+}
+
+/* Floating fish emoji animation */
+.floating-fish {
+  position: absolute;
+  font-size: 32px;
+  pointer-events: none;
+  animation: fishFloat 1.5s ease-out forwards;
+}
+
+@keyframes fishFloat {
+  0% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(
+        var(--tx, 100px),
+        var(--ty, -100px)
+      )
+      scale(0.3)
+      rotate(360deg);
+  }
+}
+
+/* Different trajectories for fishes */
+.floating-fish:nth-child(n + 4) {
+  --tx: 120px;
+  --ty: -120px;
+
+  &:nth-child(4n) {
+    --tx: -120px;
+    --ty: -100px;
+  }
+
+  &:nth-child(4n + 1) {
+    --tx: 100px;
+    --ty: -150px;
+  }
+
+  &:nth-child(4n + 2) {
+    --tx: -100px;
+    --ty: -120px;
+  }
+
+  &:nth-child(4n + 3) {
+    --tx: 80px;
+    --ty: -140px;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .floating-fisherman img {
+    width: 60px;
+  }
+
+  .floating-fish {
+    font-size: 24px;
+  }
+
+  .fisherman-1 {
+    top: 15%;
+    left: 5%;
+  }
+
+  .fisherman-2 {
+    top: 30%;
+    right: 8%;
+  }
+
+  .fisherman-3 {
+    bottom: 25%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .floating-fisherman img {
+    width: 50px;
+  }
+
+  .floating-fish {
+    font-size: 20px;
+  }
+}
