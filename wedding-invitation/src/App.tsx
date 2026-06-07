@@ -8,10 +8,10 @@ function App() {
       <Navbar />
       <Hero />
       <Schedule />
-      <Location />
       <GuestList />
       <Countdown />
       <Faq />
+      <Location />
       <Footer />
     </>
   )
