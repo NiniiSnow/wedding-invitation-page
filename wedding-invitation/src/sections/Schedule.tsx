@@ -6,12 +6,12 @@ export function Schedule() {
     const { t } = useLanguage();
     
     return (
-        <section id="schedule">
+        <section id="schedule" className="bg-center w-full flex flex-col py-12">
             <div className="schedule-timeline">
-                {scheduleItems.map((item, index) => (
-                    <div key={item.id} className="schedule-item">
-                        <div className="schedule-dot"></div>
-                        {index !== scheduleItems.length - 1 && <div className="schedule-line"></div>}
+                {scheduleItems.map((item) => (
+                    <div key={item.id} className="flex flex-col md:flex-row items-center mb-12 schedule-item"
+                    >
+                        <div className="w-full md:w-1/2 h-48 bg-cover bg-center " style={{ backgroundImage: `url(${item.imageUrl})` }}></div>
                         <div className="schedule-content">
                             <div className="schedule-time">{item.time}</div>
                             <h3 className="schedule-title">{t(item.titleKey)}</h3>
