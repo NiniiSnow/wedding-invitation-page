@@ -34,7 +34,19 @@
   },
   "location": {
     "title": "Location",
-    "getDirections": "Get Directions"
+    "getDirections": "Get Directions",
+    "venues": [
+      {
+        "name": "Gelati Church",
+        "description": "The ceremony will take place at the beautiful historic Gelati Monastery Church.",
+        "address": "Gelati Monastery, Kutaisi, Georgia"
+      },
+      {
+        "name": "Chateau Vartsike",
+        "description": "Reception, dinner, and celebrations will be held at the elegant Chateau Vartsike.",
+        "address": "Chateau Vartsike, Keda, Georgia"
+      }
+    ]
   },
   "rsvp": {
     "title": "RSVP",

@@ -5,6 +5,7 @@
   --text-h: #08060d;
   --green: #95c61e;
   --white: #ede8ea;
+  --brown: #885d2a;
   --bg: linear-gradient(135deg,
       #D7CCE8 0%,
       #F8F5EC 50%,
@@ -57,13 +58,18 @@
 
     .section-layer {
       background: var(--bg);
-      opacity: 0.1;
+      opacity: 0.3;
       width: 100%;
       height: 100%;
       position: absolute;
       top: 0;
       left: 0;
     }
+  }
+
+  #hero {
+    padding: 0px;
+    /* margin-bottom: 24px; */
   }
 
   #navbar {
