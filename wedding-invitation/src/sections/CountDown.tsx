@@ -31,23 +31,26 @@ export function Countdown() {
 
         return () => clearInterval(interval);
     }, []);
-    
+
     return (
-        <section id="countdown">
-            <div className="flex justify-center mt-8 gap-6">
-                <div className="countdown-item">
+        <section id="countdown"
+            className="bg-center w-full h-96 flex  justify-center items-center relative"
+            style={{ backgroundImage: "url('/disco.jpg')" }}
+        >
+            <div className="flex justify-center items-center mt-8 gap-6 text-2xl sm:text-4xl h-fit">
+                <div className="countdown-item text-color-white">
                     <div className="countdown-value">{timeLeft.days}</div>
                     <div className="countdown-label">{t('countdown.days') || 'Days'}</div>
                 </div>
-                <div className="countdown-item">
+                <div className="countdown-item text-color-white">
                     <div className="countdown-value">{timeLeft.hours}</div>
                     <div className="countdown-label">{t('countdown.hours') || 'Hours'}</div>
                 </div>
-                <div className="countdown-item">
+                <div className="countdown-item text-color-white">
                     <div className="countdown-value">{timeLeft.minutes}</div>
                     <div className="countdown-label">{t('countdown.minutes') || 'Minutes'}</div>
                 </div>
-                <div className="countdown-item">
+                <div className="countdown-item text-color-white">
                     <div className="countdown-value">{timeLeft.seconds}</div>
                     <div className="countdown-label">{t('countdown.seconds') || 'Seconds'}</div>
                 </div>

@@ -13,7 +13,24 @@
   "schedule": {
     "title": "Schedule",
     "ceremony": "Ceremony",
-    "reception": "Reception"
+    "reception": "Reception",
+    "items": [
+      {
+        "title": "Ceremony",
+        "location": "GelatiChurch",
+        "description": "Let's celebrate the union of two souls"
+      },
+      {
+        "title": "Gathering",
+        "location": "Chateau Vartsike",
+        "description": "Welcome drinks and appetizers"
+      },
+      {
+        "title": "Dinner",
+        "location": "Chateau Vartsike",
+        "description": "Georgian cuisine and dancing"
+      }
+    ]
   },
   "location": {
     "title": "Location",
@@ -47,8 +64,12 @@
         "answer": "Yes, free parking is available at the venue. Valet parking will also be provided."
       },
       {
-        "question": "What is the menu for the reception?",
-        "answer": "A three-course dinner will be served. Vegetarian and other dietary options are available upon request."
+        "question": "Which side is better?",
+        "answer": "Both sides are equally beautiful."
+      },
+      {
+        "question": "When does the fight start?",
+        "answer": "Unfortunately, the wedding program does not include a fight."
       }
     ]
   },

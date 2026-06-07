@@ -1,5 +1,5 @@
 import './App.css'
-import { Countdown, Faq, Footer, GuestList, Hero, Navbar, Schedule } from './sections'
+import { Countdown, Faq, Footer, GuestList, Hero, Navbar, Schedule , Location } from './sections'
 
 function App() {
 
@@ -7,10 +7,10 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Countdown />
       <Schedule />
-      {/* <Location /> */}
-      {/* <GuestList /> */}
+      <Location />
+      <GuestList />
+      <Countdown />
       <Faq />
       <Footer />
     </>
