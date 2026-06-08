@@ -1,7 +1,4 @@
-import { useLanguage } from "../hooks/useLanguage";
-
 export function Hero() {
-    const { t } = useLanguage();
 
     return (
         <section

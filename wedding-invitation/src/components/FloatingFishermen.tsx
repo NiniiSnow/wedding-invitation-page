@@ -13,7 +13,6 @@ export function FloatingFishermen() {
   const fishCountRef = useRef(0);
 
   const handleFishermanClick = (e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
     const containerRect = containerRef.current?.getBoundingClientRect();
 
     if (!containerRect) return;
@@ -22,8 +21,6 @@ export function FloatingFishermen() {
     const fishCount = Math.floor(Math.random() * 3) + 3;
 
     for (let i = 0; i < fishCount; i++) {
-      const angle = (Math.random() * Math.PI * 2);
-      const velocity = Math.random() * 3 + 2;
       const x = e.clientX - containerRect.left;
       const y = e.clientY - containerRect.top;
 
