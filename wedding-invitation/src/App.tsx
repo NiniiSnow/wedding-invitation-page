@@ -1,19 +1,12 @@
 import './App.css'
-import { Countdown, Faq, Footer, GuestList, Hero, Navbar, Schedule , Location } from './sections'
-import { FloatingFishermen } from './components/FloatingFishermen'
+import { Footer } from './sections'
+import { Outlet } from 'react-router-dom'
 
 function App() {
 
   return (
     <>
-      <FloatingFishermen />
-      <Navbar />
-      <Hero />
-      <Schedule />
-      <GuestList />
-      <Countdown />
-      <Faq />
-      <Location />
+      <Outlet />
       <Footer />
     </>
   )
