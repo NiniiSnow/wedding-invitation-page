@@ -13,13 +13,10 @@ interface RoseConfig {
 
 export function Invitation({ buttonVisible }: { buttonVisible?: boolean }) {
     const roseUrl = "/rose.svg";
-    const dragonUrl = "/dragon.svg";
-    const floralUrl = "/floral-spirals.svg";
     const cornerFishUrl = "/corner-fish.svg";
     const vinesUrl = "/vines.svg";
     const { ids } = useParams<{ ids?: string }>();
     const navigate = useNavigate();
-    const [isSingle, setIsSingle] = useState(true);
     const [showButton, setShowButton] = useState(true);
 
     const roses: RoseConfig[] = [
@@ -49,9 +46,8 @@ export function Invitation({ buttonVisible }: { buttonVisible?: boolean }) {
             return;
         }
 
-        setIsSingle(!ids.includes(","));
         setShowButton(buttonVisible ? buttonVisible : true);
-    }, [ids, navigate]);
+    }, [ids, navigate, buttonVisible]);
 
     return (
         <section

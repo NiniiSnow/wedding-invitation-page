@@ -102,7 +102,7 @@ export function GuestList() {
                             </thead>
                             <tbody>
                                 {paginatedGuests.map(guest => (
-                                    <tr key={guest.id} className={!guest.attending ? 'not-attending' : ''}>
+                                    <tr key={guest.id as React.Key} className={!guest.attending ? 'not-attending' : ''}>
                                         <td>{guest.name}</td>
                                         <td>{guest.side}</td>
                                         <td className="attending-status">
