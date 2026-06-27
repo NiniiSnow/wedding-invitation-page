@@ -1,5 +1,4 @@
 import './App.css'
-import { Footer } from './sections'
 import { Outlet } from 'react-router-dom'
 
 function App() {
@@ -7,7 +6,7 @@ function App() {
   return (
     <>
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
