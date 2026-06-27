@@ -8,7 +8,7 @@ export const router = createBrowserRouter([
         element: <App />,
         errorElement: <NotFound />,
         children: [
-            { index: true, element: <Home /> }, 
+            { index: true, element: <Home /> },
             { path: "invitation/:ids", element: <InvitationPage /> },
         ]
 
