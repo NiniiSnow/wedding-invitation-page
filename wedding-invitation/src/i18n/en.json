@@ -54,7 +54,31 @@
     "submit": "Submit"
   },
   "guests": {
-    "title": "Invited Guests"
+    "title": "Invited Guests",
+    "searchPlaceholder": "Search by name...",
+    "allGuests": "All Guests",
+    "attending": "Attending",
+    "notAttending": "Not Attending",
+    "allSides": "All Sides",
+    "brideSide": "Bride's Side",
+    "groomSide": "Groom's Side",
+    "both": "Both",
+    "name": "Name",
+    "side": "Side",
+    "attendingStatus": "Attending",
+    "table": "Table",
+    "alcohol": "Alcohol",
+    "preference": "Preference",
+    "yes": "✅ Yes",
+    "no": "❌ No",
+    "noGuests": "No guests found.",
+    "totalGuests": "Total Guests:",
+    "totalAttending": "Attending:",
+    "totalDrinking": "Drinking:",
+    "previous": "Previous",
+    "next": "Next",
+    "page": "Page",
+    "of": "of"
   },
   "faq": {
     "title": "Frequently Asked Questions",

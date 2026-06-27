@@ -54,7 +54,31 @@
     "submit": "გაგზავნა"
   },
   "guests": {
-    "title": "სტუმრები"
+    "title": "სტუმრები",
+    "searchPlaceholder": "მოძებნეთ სახელით...",
+    "allGuests": "ყველა სტუმარი",
+    "attending": "დასამნიშვნელი",
+    "notAttending": "არ დასამნიშვნელი",
+    "allSides": "ყველა მხარე",
+    "brideSide": "nevest's მხარე",
+    "groomSide": "Groom's მხარე",
+    "both": "ორივე",
+    "name": "სახელი",
+    "side": "მხარე",
+    "attendingStatus": "დასამნიშვნელი",
+    "table": "მაგიდა",
+    "alcohol": "ალკოჰოლი",
+    "preference": "პრეფერენცია",
+    "yes": "✅ დიახ",
+    "no": "❌ არა",
+    "noGuests": "სტუმრები არ მოიძებნა.",
+    "totalGuests": "ყველა სტუმარი:",
+    "totalAttending": "დასამნიშვნელი:",
+    "totalDrinking": "დასმის:",
+    "previous": "წინა",
+    "next": "შემდეგი",
+    "page": "გვერდი",
+    "of": "დან"
   },
   "faq": {
     "title": "ხშირად დასმული კითხვები",
