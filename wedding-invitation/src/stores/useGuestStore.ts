@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import { guests, type Guest } from '../data/guests';
+import type { Guest } from '../data/guests';
 
 interface useGuestState {
     guests: Guest[]
