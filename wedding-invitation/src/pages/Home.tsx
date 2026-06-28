@@ -1,5 +1,5 @@
 import { FloatingFishermen } from "../components";
-import { Countdown, Faq, GuestList, Schedule, Location, Invitation, Navbar } from "../sections";
+import { Countdown, Faq, Schedule, Location, Invitation, Navbar } from "../sections";
 
 export function Home() {
     return (
