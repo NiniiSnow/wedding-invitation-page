@@ -11,10 +11,11 @@ interface RoseConfig {
     scaleX: number;
 }
 
-export function Invitation({ buttonVisible }: { buttonVisible?: boolean }) {
+export function Invitation({ buttonVisible = true }: { buttonVisible?: boolean }) {
     const roseUrl = "/rose.svg";
     const cornerFishUrl = "/corner-fish.svg";
     const vinesUrl = "/vines.svg";
+    const dragonUrl = "/dragon.svg";
     const { ids } = useParams<{ ids?: string }>();
     const navigate = useNavigate();
     const [showButton, setShowButton] = useState(true);
@@ -41,12 +42,12 @@ export function Invitation({ buttonVisible }: { buttonVisible?: boolean }) {
     ];
 
     useEffect(() => {
-        if (!ids) {
+        if (!ids && buttonVisible) {
             navigate("/not-found");
             return;
         }
 
-        setShowButton(buttonVisible ? buttonVisible : true);
+        setShowButton(buttonVisible ? buttonVisible : false);
     }, [ids, navigate, buttonVisible]);
 
     return (
@@ -111,11 +112,6 @@ export function Invitation({ buttonVisible }: { buttonVisible?: boolean }) {
                 alt="Vines"
                 className="w-30 min-w-25 h-21.25 object-cover absolute top-15 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 opacity-50"
             />
-            {/* <img
-                src={floralUrl}
-                alt="Floral Spirals"
-                className="w-16 h-16 object-cover absolute bottom-0 left-1/2 z-0 opacity-50"
-            /> */}
             <img
                 src={cornerFishUrl}
                 alt="Corner Fish"
@@ -152,22 +148,21 @@ export function Invitation({ buttonVisible }: { buttonVisible?: boolean }) {
                 <h3>
                     ქორწილში
                 </h3>
-                <div className="flex flex-col items-center justify-center gap-2 mt-4">
-                    <span>ნოემბერი</span>
-                    <div className="flex items-center justify-center gap-6">
-                        <span>შაბათი</span>
-                        <span>5</span>
-                        <span>18:00</span>
-                    </div>
-                    <span>2026</span>
-                    <span>შატო ვარციხე</span>
-                </div>
                 {showButton && (
-                    <button className="button-main" onClick={() => navigate(`/`)}>
-                        დეტალები
-                    </button>
+                    <div className="flex flex-col items-center justify-center gap-2 mt-4">
+                        <span>ნოემბერი</span>
+                        <div className="flex items-center justify-center gap-6">
+                            <span>შაბათი</span>
+                            <span>5</span>
+                            <span>18:00</span>
+                        </div>
+                        <span>2026</span>
+                        <span>შატო ვარციხე</span>
+                        <button className="button-main" onClick={() => navigate(`/`)}>
+                            დეტალები
+                        </button>
+                    </div>
                 )}
-                
             </div>
         </section>
     );

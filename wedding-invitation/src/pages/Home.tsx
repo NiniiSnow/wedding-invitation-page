@@ -1,16 +1,17 @@
 import { FloatingFishermen } from "../components";
-import { Countdown, Faq, GuestList, Hero, Schedule, Location } from "../sections";
+import { Countdown, Faq, GuestList, Schedule, Location, Invitation, Navbar } from "../sections";
 
 export function Home() {
     return (
         <>
             <FloatingFishermen />
-            <Hero />
+            <Invitation buttonVisible={false} />
             <Schedule />
-            <GuestList />
+            {/* <GuestList /> */}
             <Countdown />
             <Faq />
             <Location />
+            <Navbar />
         </>
     )
 }
