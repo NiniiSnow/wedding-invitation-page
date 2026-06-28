@@ -66,6 +66,10 @@
       left: 0;
     }
 
+    #guests {
+      padding: 0px;
+    }
+
     .button-main {
       background-color: var(--accent-border);
       color: var(--white);
