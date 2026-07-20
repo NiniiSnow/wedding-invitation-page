@@ -17,7 +17,7 @@
     "items": [
       {
         "title": "Ceremony",
-        "location": "GelatiChurch",
+        "location": "Motsameta Monastery",
         "description": "Let's celebrate the union of two souls"
       },
       {
@@ -37,9 +37,9 @@
     "getDirections": "Get Directions",
     "venues": [
       {
-        "name": "Gelati Church",
-        "description": "The ceremony will take place at the beautiful historic Gelati Monastery Church.",
-        "address": "Gelati Monastery, Kutaisi, Georgia"
+        "name": "Motsameta Monastery",
+        "description": "The ceremony will take place at the beautiful historic Motsameta Monastery.",
+        "address": "Motsameta Monastery, Imereti, Georgia"
       },
       {
         "name": "Chateau Vartsike",

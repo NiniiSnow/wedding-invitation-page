@@ -3,6 +3,7 @@ export interface LocationVenue {
     nameKey: string;
     descriptionKey: string;
     addressKey: string;
+    imgUrl:string;
     coordinates: {
         lat: number;
         lng: number;
@@ -15,9 +16,10 @@ export const venues: LocationVenue[] = [
         nameKey: "location.venues.0.name",
         descriptionKey: "location.venues.0.description",
         addressKey: "location.venues.0.address",
+        imgUrl: "/mowameta1.jpg",
         coordinates: {
-            lat: 42.294712,
-            lng: 42.769102,
+            lat: 42.282223,
+            lng: 42.759166,
         },
     },
     {
@@ -25,6 +27,7 @@ export const venues: LocationVenue[] = [
         nameKey: "location.venues.1.name",
         descriptionKey: "location.venues.1.description",
         addressKey: "location.venues.1.address",
+        imgUrl: "/varts.jpg",
         coordinates: {
             lat: 42.134678,
             lng: 42.726439,
