@@ -85,7 +85,8 @@
     }
   }
 
-  #hero {
+  #hero,
+  #invitation {
     padding: 0px;
     /* margin-bottom: 24px; */
   }

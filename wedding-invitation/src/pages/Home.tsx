@@ -5,7 +5,7 @@ export function Home() {
     return (
         <>
             <FloatingFishermen />
-            <Invitation buttonVisible={false} />
+            <Invitation />
             <Schedule />
             {/* <GuestList /> */}
             <Countdown />

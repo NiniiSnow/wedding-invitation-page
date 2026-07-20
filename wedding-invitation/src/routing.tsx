@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
-import { Home, InvitationPage, NotFound } from "./pages";
+import { Home, NotFound } from "./pages";
 
 export const router = createBrowserRouter([
     {
@@ -9,7 +9,6 @@ export const router = createBrowserRouter([
         errorElement: <NotFound />,
         children: [
             { index: true, element: <Home /> },
-            { path: "invitation/:ids", element: <InvitationPage /> },
         ]
 
     }
