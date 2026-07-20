@@ -1,3 +1,4 @@
+import { useLanguage } from "../hooks/useLanguage";
 import "../styles/Invitation.css";
 
 interface RoseConfig {
@@ -16,6 +17,8 @@ export function Invitation() {
     // const vinesUrl = "/vines.svg";
     const dragonUrl = "/dragon.svg";
     // const { ids } = useParams<{ ids?: string }>();
+
+    const { t } = useLanguage();
 
     const roses: RoseConfig[] = [
         { size: 30, top: 1, left: 0, zIndex: 0, opacity: 50, rotation: 0, scaleX: 1 },
@@ -122,28 +125,28 @@ export function Invitation() {
             </div> */}
             {/* Invitation text */}
             <div className="invitation-container">
-            <div className="invitation-container-layer"></div>
+                <div className="invitation-container-layer"></div>
                 <div className="description-container">
                     <h3>
-                        გეპატიჟებით
+                        {t("invitation.youAreInvited")}
                     </h3>
                     <h1>
-                        ნინიკიასა
+                       {t("invitation.Ninikia")}
                     </h1>
                     <h2>
-                        და
+                        {t("invitation.and")}
                     </h2>
                     <h1>
-                        დიმიტრის
+                        {t("invitation.Dimitri")}
                     </h1>
                     <h3>
-                        ქორწილში
+                        {t("invitation.wedding")}
                     </h3>
 
                     <div className="flex flex-col items-center justify-center gap-2 mt-4">
-                        <span>ნოემბერი</span>
+                        {t("invitation.September")}
                         <div className="flex items-center justify-center gap-6">
-                            <span>შაბათი</span>
+                            <span>{t("invitation.Saturday")}</span>
                             <span>5</span>
                             <span>18:00</span>
                         </div>

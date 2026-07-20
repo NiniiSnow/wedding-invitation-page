@@ -3,11 +3,20 @@
     "title": "Ninikia and Dimitri",
     "subtitle": "Presenting"
   },
+  "invitation": {
+    "youAreInvited": "You are invited to the wedding of ",
+    "Ninikia": "Ninikia",
+    "and": "and",
+    "Dimitri": "Dimitri",
+    "wedding": "",
+    "September": "September",
+    "Saturday": "Saturday"
+  },
   "countdown": {
     "title": "Countdown to the Big Day",
     "days": "Days",
     "hours": "Hours",
-    "minutes": "Minutes",
+    "minutes": "Minutes", 
     "seconds": "Seconds"
   },
   "schedule": {

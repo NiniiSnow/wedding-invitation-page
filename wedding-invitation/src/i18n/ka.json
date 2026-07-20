@@ -3,6 +3,15 @@
     "title": "ნინიკია და დიმიტრი",
     "subtitle": "წარმოგიდგენთ"
   },
+  "invitation": {
+    "youAreInvited": "გეპატიჟებით",
+    "Ninikia": "ნინიკიასა",
+    "and": "და",
+    "Dimitri": "დიმიტრის",
+    "wedding": "ქორწილში",
+    "September": "სექტემბერი",
+    "Saturday": "შაბათი"
+  },
   "countdown": {
     "title": "დღეების დაკითხვა",
     "days": "დღე",
