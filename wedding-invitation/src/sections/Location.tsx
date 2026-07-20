@@ -15,7 +15,8 @@ export function Location() {
             <h2>{t('location.title')}</h2>
             <div className="venues-container">
                 {venues.map((venue) => (
-                    <div key={venue.id} className="venue-card">
+                    <div key={venue.id} className="venue-card" style={{ backgroundImage: `url(${venue.imgUrl})` }}>
+                        <div className="venue-overlay"></div>
                         <div className="venue-header">
                             <h3>{t(venue.nameKey)}</h3>
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">

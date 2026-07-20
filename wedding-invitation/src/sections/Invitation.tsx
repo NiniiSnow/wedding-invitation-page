@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom"
+import { useLanguage } from "../hooks/useLanguage";
+import "../styles/Invitation.css";
 
 interface RoseConfig {
     size: number;
@@ -11,14 +11,14 @@ interface RoseConfig {
     scaleX: number;
 }
 
-export function Invitation({ buttonVisible = true }: { buttonVisible?: boolean }) {
+export function Invitation() {
     const roseUrl = "/rose.svg";
     const cornerFishUrl = "/corner-fish.svg";
-    const vinesUrl = "/vines.svg";
-    // const dragonUrl = "/dragon.svg";
-    const { ids } = useParams<{ ids?: string }>();
-    const navigate = useNavigate();
-    const [showButton, setShowButton] = useState(true);
+    // const vinesUrl = "/vines.svg";
+    const dragonUrl = "/dragon.svg";
+    // const { ids } = useParams<{ ids?: string }>();
+
+    const { t } = useLanguage();
 
     const roses: RoseConfig[] = [
         { size: 30, top: 1, left: 0, zIndex: 0, opacity: 50, rotation: 0, scaleX: 1 },
@@ -41,19 +41,11 @@ export function Invitation({ buttonVisible = true }: { buttonVisible?: boolean }
         { size: 30, top: 560, left: 2, zIndex: 10, opacity: 55, rotation: -9, scaleX: 1 },
     ];
 
-    useEffect(() => {
-        if (!ids && buttonVisible) {
-            navigate("/not-found");
-            return;
-        }
-
-        setShowButton(buttonVisible ? buttonVisible : false);
-    }, [ids, navigate, buttonVisible]);
 
     return (
         <section
             id="invitation"
-            className="w-full h-screen relative"
+            className="w-full h-screen relative invitation"
         >
             {/* Rose Column - Left Side */}
             {roses.map((rose, index) => (
@@ -91,7 +83,7 @@ export function Invitation({ buttonVisible = true }: { buttonVisible?: boolean }
                     className="object-cover absolute"
                 />
             ))}
-            {/* 
+
             <img
                 src={dragonUrl}
                 alt="Dragon"
@@ -106,12 +98,12 @@ export function Invitation({ buttonVisible = true }: { buttonVisible?: boolean }
                 src={dragonUrl}
                 alt="Dragon"
                 className="w-8 h-8 md:w-10 md:h-10 object-cover absolute bottom-10 right-12 z-0 opacity-50 rotate-6"
-            /> */}
-            <img
+            />
+            {/* <img
                 src={vinesUrl}
                 alt="Vines"
                 className="w-30 min-w-25 h-21.25 object-cover absolute top-15 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 opacity-50"
-            />
+            /> */}
             <img
                 src={cornerFishUrl}
                 alt="Corner Fish"
@@ -132,37 +124,35 @@ export function Invitation({ buttonVisible = true }: { buttonVisible?: boolean }
                 {" | is Single: " + isSingle}
             </div> */}
             {/* Invitation text */}
-            <div className="w-full h-full flex flex-col items-center justify-center">
-                <h3>
-                    ძვირფასო სტუმარო , გეპატიჟებით
-                </h3>
-                <h1>
-                    ნინიკიასა
-                </h1>
-                <h2>
-                    და
-                </h2>
-                <h1>
-                    დიმიტრის
-                </h1>
-                <h3>
-                    ქორწილში
-                </h3>
-                {showButton && (
+            <div className="invitation-container">
+                <div className="invitation-container-layer"></div>
+                <div className="description-container">
+                    <h3>
+                        {t("invitation.youAreInvited")}
+                    </h3>
+                    <h1>
+                       {t("invitation.Ninikia")}
+                    </h1>
+                    <h2>
+                        {t("invitation.and")}
+                    </h2>
+                    <h1>
+                        {t("invitation.Dimitri")}
+                    </h1>
+                    <h3>
+                        {t("invitation.wedding")}
+                    </h3>
+
                     <div className="flex flex-col items-center justify-center gap-2 mt-4">
-                        <span>ნოემბერი</span>
+                        {t("invitation.September")}
                         <div className="flex items-center justify-center gap-6">
-                            <span>შაბათი</span>
+                            <span>{t("invitation.Saturday")}</span>
                             <span>5</span>
                             <span>18:00</span>
                         </div>
                         <span>2026</span>
-                        <span>შატო ვარციხე</span>
-                        <button className="button-main" onClick={() => navigate(`/`)}>
-                            დეტალები
-                        </button>
                     </div>
-                )}
+                </div>
             </div>
         </section>
     );

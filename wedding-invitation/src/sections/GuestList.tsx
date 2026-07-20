@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useLanguage } from "../hooks/useLanguage";
 import { guests, type AlcoholPreference } from "../data/guests";
-import './GuestList.css';
+import "../styles/GuestList.css";
 
 const ITEMS_PER_PAGE = 15;
 

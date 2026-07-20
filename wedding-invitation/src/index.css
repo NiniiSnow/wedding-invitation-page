@@ -80,12 +80,17 @@
       transition: all 0.3s ease;
 
       &:hover {
-        color: darken(var(--accent), 10%);
+        background-color: var(--accent);
+      }
+
+      &:disabled {
+        background-color: var(--text);
       }
     }
   }
 
-  #hero {
+  #hero,
+  #invitation {
     padding: 0px;
     /* margin-bottom: 24px; */
   }

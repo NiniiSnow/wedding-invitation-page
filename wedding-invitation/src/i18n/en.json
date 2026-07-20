@@ -3,11 +3,20 @@
     "title": "Ninikia and Dimitri",
     "subtitle": "Presenting"
   },
+  "invitation": {
+    "youAreInvited": "You are invited to the wedding of ",
+    "Ninikia": "Ninikia",
+    "and": "and",
+    "Dimitri": "Dimitri",
+    "wedding": "",
+    "September": "September",
+    "Saturday": "Saturday"
+  },
   "countdown": {
     "title": "Countdown to the Big Day",
     "days": "Days",
     "hours": "Hours",
-    "minutes": "Minutes",
+    "minutes": "Minutes", 
     "seconds": "Seconds"
   },
   "schedule": {
@@ -17,7 +26,7 @@
     "items": [
       {
         "title": "Ceremony",
-        "location": "GelatiChurch",
+        "location": "Motsameta Monastery",
         "description": "Let's celebrate the union of two souls"
       },
       {
@@ -37,9 +46,9 @@
     "getDirections": "Get Directions",
     "venues": [
       {
-        "name": "Gelati Church",
-        "description": "The ceremony will take place at the beautiful historic Gelati Monastery Church.",
-        "address": "Gelati Monastery, Kutaisi, Georgia"
+        "name": "Motsameta Monastery",
+        "description": "The ceremony will take place at the beautiful historic Motsameta Monastery.",
+        "address": "Motsameta Monastery, Imereti, Georgia"
       },
       {
         "name": "Chateau Vartsike",
@@ -108,6 +117,15 @@
         "answer": "Unfortunately, the wedding program does not include a fight."
       }
     ]
+  },
+  "table": {
+    "title": "Find Your Table",
+    "note": "Please note that the table layout may change. The final layout will be available on-site.",
+    "searchPlaceholder": "Enter your name",
+    "tableNumber": "Table #",
+    "noGuests": "No guests found.",
+    "searchButton": "Search",
+    "comingSoon": "Coming soon, thank you for your patience!"
   },
   "footer": {
     "text": "Thank you for celebrating with us"
