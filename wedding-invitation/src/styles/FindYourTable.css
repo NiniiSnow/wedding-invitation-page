@@ -1,0 +1,52 @@
+.find-your-table-section {
+    padding: 2rem;
+
+    .find-your-table-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+
+        input {
+            padding: 0.75rem;
+            border: 1px solid var(--accent-border);
+            border-radius: 8px;
+            font-size: 1rem;
+            flex: 1;
+            min-width: 350px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 5px var(--accent);
+        }
+
+
+        button {
+            padding: 0.75rem 1.5rem;
+            min-width: 350px;
+            background-color: var(--accent-border);
+            color: var(--white);
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:disabled {
+            background-color: var(--accent);
+            color: var(--white);
+            cursor: not-allowed;
+        }
+    }
+
+    @media (max-width: 600px) {
+
+        input,
+        button {
+            width: 100%;
+        }
+    }
+}

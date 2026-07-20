@@ -109,6 +109,15 @@
       }
     ]
   },
+  "table": {
+    "title": "Find Your Table",
+    "note": "Please note that the table layout may change. The final layout will be available on-site.",
+    "searchPlaceholder": "Enter your name",
+    "tableNumber": "Table #",
+    "noGuests": "No guests found.",
+    "searchButton": "Search",
+    "comingSoon": "Coming soon, thank you for your patience!"
+  },
   "footer": {
     "text": "Thank you for celebrating with us"
   }

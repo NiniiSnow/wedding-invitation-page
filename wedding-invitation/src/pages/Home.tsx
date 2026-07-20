@@ -1,5 +1,5 @@
 import { FloatingFishermen } from "../components";
-import { Countdown, Faq, Schedule, Location, Invitation, Navbar } from "../sections";
+import { Countdown, Faq, Schedule, Location, Invitation, Navbar, FindYourTable } from "../sections";
 
 export function Home() {
     return (
@@ -11,6 +11,7 @@ export function Home() {
             <Countdown />
             <Faq />
             <Location />
+            <FindYourTable />
             <Navbar />
         </>
     )
