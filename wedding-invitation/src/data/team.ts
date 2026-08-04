@@ -13,12 +13,12 @@ export interface TeamMember {
 export const team: TeamMember[] = [
   {
     id: 'ninikia',
-    fullname: 'Nino Chirgadze',
+    fullname: 'Nini Chirgadze',
     position: 'Bride',
     shortDescription: 'A beautiful soul with a passion for life and adventure.',
     side: 'bride',
     imageUrl: 'ninikia.png',
-    friendlyName: 'Ninikia',
+    friendlyName: 'Ninikia The Purple Rose',
     age: 28,
     maritalStatus: 'Soon to be Married'
   },
@@ -29,7 +29,7 @@ export const team: TeamMember[] = [
     shortDescription: 'A kind-hearted gentleman with a love for family and traditions.',
     side: 'groom',
     imageUrl: 'dimitri.png',
-    friendlyName: 'Dima',
+    friendlyName: 'Dimitri of The Sand',
     age: 30,
     maritalStatus: 'Soon to be Married'
   },
@@ -40,7 +40,7 @@ export const team: TeamMember[] = [
     shortDescription: 'Closest friend and confidant of the bride.',
     side: 'bride',
     imageUrl: 'buku.jpg',
-    friendlyName: 'Buku',
+    friendlyName: 'Buku Blue-eyed Samurai',
     age: 29,
     maritalStatus: 'Single'
   },
@@ -51,7 +51,7 @@ export const team: TeamMember[] = [
     shortDescription: 'Long-time friend and supporter of the bride.',
     side: 'bride',
     imageUrl: 'tika.jpg',
-    friendlyName: 'Lonely Wolf',
+    friendlyName: 'Tiniko The Lonely Wolf',
     age: 27,
     maritalStatus: 'Single'
   },
@@ -61,8 +61,8 @@ export const team: TeamMember[] = [
     position: 'Groomsman',
     shortDescription: 'Best friend of the groom and trusted companion.',
     side: 'groom',
-    imageUrl: 'revaz.png',
-    friendlyName: 'Rezo Dzma',
+    imageUrl: 'revazi1.jpg',
+    friendlyName: 'Revazi The Loyal',
     age: 31,
     maritalStatus: 'Engaged'
   },
@@ -73,8 +73,63 @@ export const team: TeamMember[] = [
     shortDescription: 'Loyal friend and supporter of the groom.',
     side: 'groom',
     imageUrl: 'zibzo.jpg',
-    friendlyName: 'Zibzo',
+    friendlyName: 'Zibzo The Academician',
     age: 29,
     maritalStatus: 'Single'
+  },
+  {
+    id: 'sister1',
+    fullname: 'Rusudan Chirgadze',
+    position: 'Sister of the Bride',
+    shortDescription: 'Built-in best friend and confidant of the bride.',
+    side: 'bride',
+    imageUrl: 'rusikia.jpg',
+    friendlyName: 'Ruska The Great',
+    age: 22,
+    maritalStatus: 'Married'
+  },
+  {
+    id: 'sister2',
+    fullname: 'Tatuli Chirgadze',
+    position: 'Sister of the Bride',
+    shortDescription: 'Middle Child, full of wisdom and grace.',
+    side: 'bride',
+    imageUrl: 'tatuli.jpg',
+    friendlyName: 'Tamriko The Wise',
+    age: 24,
+    maritalStatus: 'Married'
+  },
+  {
+    id: 'sister3',
+    fullname: 'Qetevan Chirgadze',
+    position: 'Sister of the Bride',
+    shortDescription: 'Little sister of the bride, full of energy and joy.',
+    side: 'bride',
+    imageUrl: 'qetatia.jpg',
+    friendlyName: 'Qetatia The Brave',
+    age: 24,
+    maritalStatus: 'Married'
+  },
+  {
+    id: 'brother',
+    fullname: 'Giorgi Chirgadze',
+    position: 'Brother of the Bride',
+    shortDescription: 'The youngest sibling',
+    side: 'bride',
+    imageUrl: 'giorgi.jpg',
+    friendlyName: 'Jora The Youngest',
+    age: 16,
+    maritalStatus: 'Single'
+  },
+  {
+    id: 'mother',
+    fullname: 'Nana Maglakelidze',
+    position: 'Mother of the Bride',
+    shortDescription: 'The loving and supportive mother of the bride.',
+    side: 'bride',
+    imageUrl: 'nanu.jpg',
+    friendlyName: 'Nanu Mother of Dragons',
+    age: 50,
+    maritalStatus: 'Married'
   }
 ];

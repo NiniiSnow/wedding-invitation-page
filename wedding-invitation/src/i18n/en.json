@@ -139,6 +139,44 @@
   "team": {
     "title": "Meet the Team",
     "age": "Age",
-    "maritalStatus": "Marital Status"
+    "maritalStatus": "Marital Status",
+    "members": {
+      "ninikia": {
+        "fullname": "Nino Chirgadze",
+        "position": "Bride",
+        "friendlyName": "Ninikia",
+        "shortDescription": "A beautiful soul with a passion for life and adventure."
+      },
+      "dimitri": {
+        "fullname": "Dimitri Gelashvili",
+        "position": "Groom",
+        "friendlyName": "Dima",
+        "shortDescription": "A kind-hearted gentleman with a love for family and traditions."
+      },
+      "bridesmaid1": {
+        "fullname": "Ana Shvangiradze",
+        "position": "Bridesmaid",
+        "friendlyName": "Buku",
+        "shortDescription": "Closest friend and confidant of the bride."
+      },
+      "bridesmaid2": {
+        "fullname": "Tinatin Lolomadze",
+        "position": "Bridesmaid",
+        "friendlyName": "Lonely Wolf",
+        "shortDescription": "Long-time friend and supporter of the bride."
+      },
+      "groomsman1": {
+        "fullname": "Revaz Ugulava",
+        "position": "Groomsman",
+        "friendlyName": "Rezo Dzma",
+        "shortDescription": "Best friend of the groom and trusted companion."
+      },
+      "groomsman2": {
+        "fullname": "Nika Zibzibadze",
+        "position": "Groomsman",
+        "friendlyName": "Zibzo",
+        "shortDescription": "Loyal friend and supporter of the groom."
+      }
+    }
   }
 }

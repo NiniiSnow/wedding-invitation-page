@@ -139,6 +139,44 @@
   "team": {
     "title": "გაიცანით გუნდი",
     "age": "ასაკი",
-    "maritalStatus": "ოჯახური მდგომარეობა"
+    "maritalStatus": "ოჯახური მდგომარეობა",
+    "members": {
+      "ninikia": {
+        "fullname": "ნინო ჩირგაძე",
+        "position": "პატარძალი",
+        "friendlyName": "ნინიკია",
+        "shortDescription": "아름다운 სულით, ცხოვრებისა და თავგადასავლის მიმართ ვნებიანი."
+      },
+      "dimitri": {
+        "fullname": "დიმიტრი გელაშვილი",
+        "position": "სიძე",
+        "friendlyName": "დიმა",
+        "shortDescription": "კეთილი გულის კაცი, ოჯახისა და ტრადიციებთან ღრმა დიდი ბრძნებით."
+      },
+      "bridesmaid1": {
+        "fullname": "ანა შვანგირაძე",
+        "position": "პატარძლის კიდევ",
+        "friendlyName": "ბუკু",
+        "shortDescription": "პატარძლის ყველაზე ახლო მეგობარი და ნდობის პირი."
+      },
+      "bridesmaid2": {
+        "fullname": "ტინათინ ლოლომაძე",
+        "position": "პატარძლის კიდევ",
+        "friendlyName": "Lonely Wolf",
+        "shortDescription": "დაბერი მეგობარი და პატარძლის მხარდამჭერი."
+      },
+      "groomsman1": {
+        "fullname": "რევაზ უგულავა",
+        "position": "სიძის კიდევ",
+        "friendlyName": "რეზო ძმა",
+        "shortDescription": "სიძის საუკეთესო მეგობარი და შენობილი კომპანიონი."
+      },
+      "groomsman2": {
+        "fullname": "ნიკა ზიბზიბაძე",
+        "position": "სიძის კიდევ",
+        "friendlyName": "ზიბზო",
+        "shortDescription": "ერთგული მეგობარი და სიძის მხარდამჭერი."
+      }
+    }
   }
 }

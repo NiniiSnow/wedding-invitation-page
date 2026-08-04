@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import { team } from '../data/team';
@@ -10,24 +9,17 @@ import '../styles/MeetTheTeam.css';
 
 export function MeetTheTeam() {
   const { t } = useLanguage();
-  const [expandedCard, setExpandedCard] = useState<string | null>(null);
-
-  const toggleExpand = (id: string) => {
-    setExpandedCard(expandedCard === id ? null : id);
-  };
 
   const getSideColor = (side: 'bride' | 'groom') => {
     return side === 'bride' ? '#9b59b6' : '#27ae60';
   };
 
   const TeamCard = ({ member }: { member: typeof team[0] }) => {
-    const isExpanded = expandedCard === member.id;
     const sideColor = getSideColor(member.side);
 
     return (
       <div
-        className={`team-card ${isExpanded ? 'expanded' : ''}`}
-        onClick={() => toggleExpand(member.id)}
+        className="team-card"
         style={{ borderTopColor: sideColor }}
       >
         <div className="team-card-image">
@@ -39,22 +31,7 @@ export function MeetTheTeam() {
           <h3 className="team-card-name">{member.fullname}</h3>
           <p className="team-card-position">{member.position}</p>
           <p className="team-card-friendly-name">({member.friendlyName})</p>
-
-          {isExpanded && (
-            <div className="team-card-details">
-              <p className="team-card-description">{member.shortDescription}</p>
-              <div className="team-card-info-grid">
-                <div className="team-card-info">
-                  <span className="info-label">{t('team.age') || 'Age'}:</span>
-                  <span className="info-value">{member.age}</span>
-                </div>
-                <div className="team-card-info">
-                  <span className="info-label">{t('team.maritalStatus') || 'Marital Status'}:</span>
-                  <span className="info-value">{member.maritalStatus}</span>
-                </div>
-              </div>
-            </div>
-          )}
+          <p className="team-card-description">{member.shortDescription}</p>
         </div>
       </div>
     );
