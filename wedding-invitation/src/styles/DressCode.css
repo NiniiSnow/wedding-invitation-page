@@ -1,0 +1,90 @@
+.dress-code-section {
+  padding: 60px 20px;
+}
+
+.dress-code-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dress-code-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.dress-code-guides {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.dress-code-card {
+  border: 2px solid;
+  border-radius: 12px;
+  padding: 60px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dress-code-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dress-code-label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+}
+
+.dress-code-card[style*="rgb(255, 255, 255)"] .dress-code-label,
+.dress-code-card[style*="#FFFFFF"] .dress-code-label {
+  color: #333;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.dress-code-card[style*="rgb(155, 89, 182)"],
+.dress-code-card[style*="#9b59b6"] {
+  color: #fff;
+}
+
+.dress-code-card[style*="rgb(155, 89, 182)"] .dress-code-label,
+.dress-code-card[style*="#9b59b6"] .dress-code-label {
+  color: #fff;
+}
+
+.dress-code-card[style*="rgb(39, 174, 96)"],
+.dress-code-card[style*="#27ae60"] {
+  color: #fff;
+}
+
+.dress-code-card[style*="rgb(39, 174, 96)"] .dress-code-label,
+.dress-code-card[style*="#27ae60"] .dress-code-label {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .dress-code-title {
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  .dress-code-guides {
+    gap: 20px;
+  }
+
+  .dress-code-card {
+    padding: 40px 20px;
+    min-height: 150px;
+  }
+
+  .dress-code-label {
+    font-size: 1.2rem;
+  }
+}
