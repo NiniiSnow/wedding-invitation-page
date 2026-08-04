@@ -129,5 +129,16 @@
   },
   "footer": {
     "text": "Thank you for celebrating with us"
+  },
+  "dressCode": {
+    "title": "Dress Code",
+    "bride": "Bride",
+    "brideSide": "Bride's Side",
+    "groomSide": "Groom's Side"
+  },
+  "team": {
+    "title": "Meet the Team",
+    "age": "Age",
+    "maritalStatus": "Marital Status"
   }
 }

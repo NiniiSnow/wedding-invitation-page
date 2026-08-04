@@ -9,3 +9,5 @@ export * from './Navbar';
 export *  from './Location';
 export * from './Invitation';
 export * from './FindYourTable';
+export * from './DressCode';
+export * from './MeetTheTeam';
