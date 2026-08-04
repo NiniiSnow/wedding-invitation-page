@@ -46,6 +46,7 @@ export function MeetTheTeam() {
           modules={[Navigation, Pagination]}
           navigation
           pagination={{ clickable: true }}
+          loop={true}
           spaceBetween={30}
           breakpoints={{
             320: {
