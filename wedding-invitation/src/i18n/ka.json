@@ -156,7 +156,7 @@
       "bridesmaid1": {
         "fullname": "ანა შვანგირაძე",
         "position": "პატარძლის კიდევ",
-        "friendlyName": "ბუკু",
+        "friendlyName": "ბუკு",
         "shortDescription": "პატარძლის ყველაზე ახლო მეგობარი და ნდობის პირი."
       },
       "bridesmaid2": {
@@ -178,5 +178,10 @@
         "shortDescription": "ერთგული მეგობარი და სიძის მხარდამჭერი."
       }
     }
+  },
+  "family": {
+    "title": "გაიცანით ოჯახი",
+    "age": "ასაკი",
+    "maritalStatus": "ოჯახური მდგომარეობა"
   }
 }

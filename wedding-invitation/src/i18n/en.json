@@ -178,5 +178,10 @@
         "shortDescription": "Loyal friend and supporter of the groom."
       }
     }
+  },
+  "family": {
+    "title": "Meet the Family",
+    "age": "Age",
+    "maritalStatus": "Marital Status"
   }
 }
