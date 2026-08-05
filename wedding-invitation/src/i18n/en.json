@@ -134,7 +134,15 @@
     "title": "Dress Code",
     "bride": "Bride",
     "brideSide": "Bride's Side",
-    "groomSide": "Groom's Side"
+    "groomSide": "Groom's Side",
+    "rulesTitle": "Dress Code Guidelines",
+    "rule1": "Do NOT wear white - white is reserved for the bride",
+    "rule2": "Avoid white mixed with other colors or patterns",
+    "rule3": "Purple is for the bride's side close relatives and family - you can wear it too!",
+    "rule4": "Green is the groom's favorite color - you are welcome to wear it!",
+    "rule5": "Dress comfortably and formally - aim for elegant and sophisticated style",
+    "rule6": "The weather is expected to be pleasant, but bring a jacket just in case",
+    "rule7": "Respect the formal dress code - avoid casual attire"
   },
   "team": {
     "title": "Meet the Team",
@@ -178,5 +186,10 @@
         "shortDescription": "Loyal friend and supporter of the groom."
       }
     }
+  },
+  "family": {
+    "title": "Meet the Family",
+    "age": "Age",
+    "maritalStatus": "Marital Status"
   }
 }

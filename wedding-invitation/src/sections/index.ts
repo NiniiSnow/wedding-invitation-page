@@ -11,3 +11,4 @@ export * from './Invitation';
 export * from './FindYourTable';
 export * from './DressCode';
 export * from './MeetTheTeam';
+export * from './MeetFamily';
