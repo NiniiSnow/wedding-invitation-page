@@ -49,6 +49,54 @@
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
+.dress-code-rules {
+  margin-top: 60px;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dress-code-rules-title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.dress-code-list {
+  list-style-position: inside;
+  line-height: 1.8;
+  color: #555;
+  font-size: 1rem;
+}
+
+.dress-code-list li {
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.dress-code-list li:before {
+  content: "✓ ";
+  color: #9b59b6;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .dress-code-rules {
+    padding: 30px 20px;
+  }
+
+  .dress-code-list {
+    font-size: 0.95rem;
+  }
+
+  .dress-code-list li {
+    margin-bottom: 12px;
+  }
+}
+
 .dress-code-card[style*="rgb(155, 89, 182)"],
 .dress-code-card[style*="#9b59b6"] {
   color: #fff;
