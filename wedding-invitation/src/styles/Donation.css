@@ -5,6 +5,7 @@
             line-height: 1.6;
             margin: 16px 0;
         }
+
         .donation-button {
             width: 100%;
             padding: 12px 24px;
@@ -27,6 +28,16 @@
             &:active {
                 transform: scale(0.98);
             }
+        }
+
+        .bog-button {
+            background: #FD1D1D;
+            background: linear-gradient(90deg, rgba(253, 29, 29, 1) 4%, rgba(252, 176, 69, 1) 100%);
+        }
+
+        .tbc-button {
+            background: #d7cce8;
+            background: linear-gradient(90deg, rgba(215, 204, 232, 1) 0%, rgba(0, 173, 238, 1) 98%, rgba(193, 232, 183, 1) 100%);
         }
     }
 }
