@@ -1,0 +1,32 @@
+.donation-section {
+    .donation-container {
+        .donation-description {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 16px 0;
+        }
+        .donation-button {
+            width: 100%;
+            padding: 12px 24px;
+            margin-top: 20px;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+
+            &:hover {
+                transform: scale(1.02);
+                box-shadow: 0 6px 16px rgba(170, 59, 255, 0.3);
+            }
+
+            &:active {
+                transform: scale(0.98);
+            }
+        }
+    }
+}

@@ -191,5 +191,13 @@
     "title": "Meet the Family",
     "age": "Age",
     "maritalStatus": "Marital Status"
+  },
+    "bankAccounts": {
+    "title": "Bank Accounts",
+    "description": "If you would like to help fund our wedding, you can use the accounts below. We greatly appreciate your support.",
+    "BOG": "Bank of Georgia",
+    "TBC": "TBC Bank",
+    "copy": "Copy",
+    "copied": "Copied!"
   }
 }
