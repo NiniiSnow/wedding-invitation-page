@@ -19,7 +19,8 @@ export default function Donation() {
             <div className="donation-container">
                 {
                     bankAccount.map((account) => (
-                        <button key={account.id} className="donation-button" onClick={() => copyToClipboard(account.accountNumber)} style={{ backgroundColor: account.bankName === "BOG" ? "#fe5f0a" : "#00adee" }}>
+                        <button key={account.id} onClick={() => copyToClipboard(account.accountNumber)} 
+                        className={`donation-button ${account.bankName === "BOG" ? "bog-button" : "tbc-button"}`}>
                             {t(`bankAccounts.${account.bankName}`)}
                         </button>
                     ))
