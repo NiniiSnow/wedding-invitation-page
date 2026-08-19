@@ -1,5 +1,9 @@
 .find-your-table-section {
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
 
     .find-your-table-container {
         display: flex;
