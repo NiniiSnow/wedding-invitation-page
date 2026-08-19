@@ -35,4 +35,9 @@ export const faqs: FAQ[] = [
     questionKey: "faq.items.5.question",
     answerKey: "faq.items.5.answer",
   },
+  {
+    id: 7,
+    questionKey: "faq.items.6.question",
+    answerKey: "faq.items.6.answer",
+  },
 ];
