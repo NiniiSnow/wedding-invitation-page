@@ -8,7 +8,6 @@ export function Home() {
             <FloatingFishermen />
             <Invitation />
             <Schedule />
-            {/* <GuestList /> */}
             <Countdown />
             <Faq />
             <Location />
