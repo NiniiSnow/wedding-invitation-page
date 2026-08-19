@@ -1,4 +1,3 @@
-import { useLanguage } from "../hooks/useLanguage";
 import "../styles/Invitation.css";
 
 interface RoseConfig {
@@ -18,7 +17,7 @@ export function Invitation() {
     const dragonUrl = "/dragon.svg";
     // const { ids } = useParams<{ ids?: string }>();
 
-    const { t } = useLanguage();
+    // const { t } = useLanguage();
 
     const roses: RoseConfig[] = [
         { size: 30, top: 1, left: 0, zIndex: 0, opacity: 50, rotation: 0, scaleX: 1 },
