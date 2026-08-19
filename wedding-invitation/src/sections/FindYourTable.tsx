@@ -27,6 +27,7 @@ export function FindYourTable() {
                     placeholder={t("table.searchPlaceholder")}
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
+                    disabled
                 />
                 <p>{t("table.note")}</p>
             </div>
