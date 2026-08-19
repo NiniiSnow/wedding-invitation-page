@@ -2,7 +2,6 @@ export * from './Hero';
 export * from './CountDown';
 export * from './Schedule';
 export * from './Location';
-export * from './GuestList';
 export * from './Faq';
 export * from './Footer';
 export * from './Navbar';

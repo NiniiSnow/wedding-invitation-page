@@ -1,4 +1,3 @@
-import { useLanguage } from "../hooks/useLanguage";
 import "../styles/Invitation.css";
 
 interface RoseConfig {
@@ -18,7 +17,7 @@ export function Invitation() {
     const dragonUrl = "/dragon.svg";
     // const { ids } = useParams<{ ids?: string }>();
 
-    const { t } = useLanguage();
+    // const { t } = useLanguage();
 
     const roses: RoseConfig[] = [
         { size: 30, top: 1, left: 0, zIndex: 0, opacity: 50, rotation: 0, scaleX: 1 },
@@ -126,7 +125,7 @@ export function Invitation() {
             {/* Invitation text */}
             <div className="invitation-container">
                 <div className="invitation-container-layer"></div>
-                <div className="description-container">
+                {/* <div className="description-container">
                     <h3>
                         {t("invitation.youAreInvited")}
                     </h3>
@@ -152,7 +151,7 @@ export function Invitation() {
                         </div>
                         <span>2026</span>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );

@@ -41,7 +41,7 @@ export function DressCode() {
             </div>
           ))}
         </div>
-
+{/* 
         <div className="dress-code-rules">
           <h2 className="dress-code-rules-title">{t('dressCode.rulesTitle') || 'Dress Code Guidelines'}</h2>
           <ul className="dress-code-list">
@@ -53,7 +53,7 @@ export function DressCode() {
             <li>{t('dressCode.rule6')}</li>
             <li>{t('dressCode.rule7')}</li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </section>
   );
