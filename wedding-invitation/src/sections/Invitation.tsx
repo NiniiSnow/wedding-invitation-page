@@ -126,7 +126,7 @@ export function Invitation() {
             {/* Invitation text */}
             <div className="invitation-container">
                 <div className="invitation-container-layer"></div>
-                <div className="description-container">
+                {/* <div className="description-container">
                     <h3>
                         {t("invitation.youAreInvited")}
                     </h3>
@@ -152,7 +152,7 @@ export function Invitation() {
                         </div>
                         <span>2026</span>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );
