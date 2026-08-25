@@ -4,13 +4,11 @@
     .invitation-container {
         width: 100%;
         height: 100%;
-        /* background-image: url('/sioni-2.jpeg'); */
-        background-image: url('/invitation-front.jpeg');
-        background-size: cover;
-        background-position: center;
-
-        /* Elegant glass-morphism background */
-        backdrop-filter: blur(10px);
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         .description-container {
             width: 100%;
