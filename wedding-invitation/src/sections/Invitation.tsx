@@ -12,12 +12,10 @@ interface RoseConfig {
 
 export function Invitation() {
     const roseUrl = "/rose.svg";
-    const cornerFishUrl = "/corner-fish.svg";
-    // const vinesUrl = "/vines.svg";
     const dragonUrl = "/dragon.svg";
-    // const { ids } = useParams<{ ids?: string }>();
 
-    // const { t } = useLanguage();
+    const invitationBackgroundUrl = '/invitation-background.jpeg';
+    const invitationSecondaryBackgroundUrl = '/invitation-front.jpeg';
 
     const roses: RoseConfig[] = [
         { size: 30, top: 1, left: 0, zIndex: 0, opacity: 50, rotation: 0, scaleX: 1 },
@@ -98,60 +96,9 @@ export function Invitation() {
                 alt="Dragon"
                 className="w-8 h-8 md:w-10 md:h-10 object-cover absolute bottom-10 right-12 z-0 opacity-50 rotate-6"
             />
-            {/* <img
-                src={vinesUrl}
-                alt="Vines"
-                className="w-30 min-w-25 h-21.25 object-cover absolute top-15 left-1/2 -translate-x-1/2 -translate-y-1/2 z-0 opacity-50"
-            /> */}
-            <img
-                src={cornerFishUrl}
-                alt="Corner Fish"
-                className="w-16 h-16 object-cover absolute top-0 right-0 z-0 opacity-50"
-            />
-            <img
-                src={cornerFishUrl}
-                alt="Corner Fish"
-                className="w-16 h-16 object-cover absolute bottom-0 left-0 z-0 opacity-50 rotate-180"
-            />
-            {/* <img
-                src={roseUrl}
-                alt="Rose Facing Right"
-                className="w-16 h-16 object-cover absolute top-0 right-0 z-0 opacity-50 scale-x-[-1]"
-            /> */}
-            {/* <div className="w-full h-full md:w-1/2 md:h-1/2 flex items-center justify-center">
-                {"invitation for " + ids}
-                {" | is Single: " + isSingle}
-            </div> */}
-            {/* Invitation text */}
             <div className="invitation-container">
-                <div className="invitation-container-layer"></div>
-                {/* <div className="description-container">
-                    <h3>
-                        {t("invitation.youAreInvited")}
-                    </h3>
-                    <h1>
-                       {t("invitation.Ninikia")}
-                    </h1>
-                    <h2>
-                        {t("invitation.and")}
-                    </h2>
-                    <h1>
-                        {t("invitation.Dimitri")}
-                    </h1>
-                    <h3>
-                        {t("invitation.wedding")}
-                    </h3>
-
-                    <div className="flex flex-col items-center justify-center gap-2 mt-4">
-                        {t("invitation.September")}
-                        <div className="flex items-center justify-center gap-6">
-                            <span>{t("invitation.Saturday")}</span>
-                            <span>5</span>
-                            <span>18:00</span>
-                        </div>
-                        <span>2026</span>
-                    </div>
-                </div> */}
+                <img src={invitationSecondaryBackgroundUrl} alt="Invitation Background" className="w-1/2 h-1/2 min-w-1/2 min-h-1/2 md:w-11/12 md:h-11/12 object-cover" />
+                <img src={invitationBackgroundUrl} alt="Invitation Background Secondary" className="w-5/6 h-1/2 min-w-1/2 min-h-1/2 md:w-11/12 md:h-11/12 object-cover" />
             </div>
         </section>
     );
