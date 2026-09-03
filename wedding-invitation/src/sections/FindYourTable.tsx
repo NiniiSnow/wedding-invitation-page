@@ -20,14 +20,12 @@ export function FindYourTable() {
         <section id="find-your-table" className="find-your-table-section">
             <div className="find-your-table-container">
                 <h2>{t("table.title")}</h2>
-                <p>{t("table.comingSoon")}</p>
                 <input
                     type="text"
                     className="px-2 py-0.5"
                     placeholder={t("table.searchPlaceholder")}
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
-                    disabled
                 />
                 <p>{t("table.note")}</p>
             </div>
