@@ -8,6 +8,7 @@ import Paper from '@mui/material/Paper';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import type { Guest } from '../data/guests';
+import { useLanguage } from '../hooks/useLanguage';
 
 
 type GuestTableProps = {
@@ -17,6 +18,8 @@ type GuestTableProps = {
 export function GuestTable({ guests }: GuestTableProps) {
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+    const { t } = useLanguage();
+
 
     return (
         <TableContainer
@@ -43,9 +46,10 @@ export function GuestTable({ guests }: GuestTableProps) {
             >
                 <TableHead>
                     <TableRow>
-                        <TableCell>First Name</TableCell>
-                        <TableCell>Last Name</TableCell>
-                        <TableCell>Table Number</TableCell>
+                        <TableCell>{t('table.firstName')}</TableCell>
+                        <TableCell>{t('table.lastName')}</TableCell>
+                        <TableCell>{t('table.side')}</TableCell>
+                        <TableCell>{t('table.tableNumber')}</TableCell>
                     </TableRow>
                 </TableHead>
                 <TableBody>
@@ -55,6 +59,7 @@ export function GuestTable({ guests }: GuestTableProps) {
                                 {guest.firstName}
                             </TableCell>
                             <TableCell>{guest.lastName}</TableCell>
+                            <TableCell>{guest.side}</TableCell>
                             <TableCell>{guest.tableNumber ?? '—'}</TableCell>
                         </TableRow>
                     ))}
