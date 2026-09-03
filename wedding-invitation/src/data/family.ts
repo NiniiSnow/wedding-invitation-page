@@ -23,6 +23,17 @@ export const family: FamilyMember[] = [
     maritalStatus: 'Married'
   },
   {
+    id: 'sister4',
+    fullname: 'Mariam Chirgadze',
+    position: 'Sister of the Bride',
+    shortDescription: 'Sister of the bride, wise and caring.',
+    side: 'bride',
+    imageUrl: 'marikia.jpg',
+    friendlyName: 'Marikia The Tall',
+    age: 22,
+    maritalStatus: 'Married'
+  },
+  {
     id: 'sister2',
     fullname: 'Tatuli Chirgadze',
     position: 'Sister of the Bride',
@@ -74,6 +85,28 @@ export const family: FamilyMember[] = [
     side: 'bride',
     imageUrl: 'tamu.jpeg',
     friendlyName: 'Shah Tamaz , The Thanos of the Family',
+    age: 50,
+    maritalStatus: 'Married'
+  },
+  {
+    id: 'mother',
+    fullname: 'Bzia Tskhvariashvili',
+    position: 'Mother of the Groom',
+    shortDescription: 'The loving and supportive mother of the groom.',
+    side: 'groom',
+    imageUrl: 'bzia.jpeg',
+    friendlyName: 'Bzia The Wise',
+    age: 50,
+    maritalStatus: 'Married'
+  },
+  {
+    id: 'father',
+    fullname: 'Besik Gelashvili',
+    position: 'Father of the Groom',
+    shortDescription: 'Father of the groom.',
+    side: 'groom',
+    imageUrl: 'beso.jpg',
+    friendlyName: 'Besik The Strong',
     age: 50,
     maritalStatus: 'Married'
   },
